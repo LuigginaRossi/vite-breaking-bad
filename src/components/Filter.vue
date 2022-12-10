@@ -106,3 +106,22 @@ export default {
     </div>
 
 </template>
+
+<style scoped>
+    .btn-info {
+ 
+    --bs-btn-bg: #fff3cd;
+    --bs-btn-border-color: #fff3cd;
+
+    --bs-btn-hover-bg: #31d2f2;
+    --bs-btn-hover-border-color: #25cff2;
+    --bs-btn-focus-shadow-rgb: 11,172,204;
+
+    --bs-btn-active-bg: #e8cf7e;
+    --bs-btn-active-border-color: #e8cf7e;
+
+
+    --bs-btn-disabled-bg: #fff3cd;
+    --bs-btn-disabled-border-color: #fff3cd;
+    }
+</style>
