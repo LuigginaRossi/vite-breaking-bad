@@ -19,6 +19,13 @@ export default {
     methods:{
         onSearchClick(){
             this.$emit("search", {...this.filter})
+            this.filter = this.filter;
+        },
+        resetFilters(){
+                this.filter.name ="";
+                this.filter.status= "";
+                this.filter.type= "";
+                this.filter.gender= "";
         }
     },
     computed:{
@@ -49,6 +56,8 @@ export default {
         <div class="alert alert-info">
             Sono stati trovati  {{store.paginationInfo.count}} elementi.
             Stai visualizzando la pagina {{store.currentPage}} di {{store.paginationInfo.pages}}
+
+            {{filter}}
         </div>
 
         <div class="alert alert-warning">
@@ -98,7 +107,7 @@ export default {
             </div>
 
             <div class="d-flex gap-3 justify-content-center">
-                <button class="btn btn-secondary" type="reset">Reset</button>
+                <button class="btn btn-secondary" type="reset" @click="resetFilters()">Reset</button>
                 <button class="btn btn-info">Cerca</button>
             </div>
 

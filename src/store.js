@@ -7,7 +7,6 @@ export const store = reactive({
     charactersList:[],
     paginationInfo:{},
     currentPage: 1,
-
     activeFilters: null,
 
 })

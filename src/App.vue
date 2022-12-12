@@ -12,9 +12,9 @@ export default{
     }
   },
   methods:{
-
+ 
     onSearch(filters){
-
+      this.store.activeFilters = {};
       this.store.activeFilters = filters;
       fetchCharacter();
       console.log(filters);
