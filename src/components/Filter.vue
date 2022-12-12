@@ -56,8 +56,6 @@ export default {
         <div class="alert alert-info">
             Sono stati trovati  {{store.paginationInfo.count}} elementi.
             Stai visualizzando la pagina {{store.currentPage}} di {{store.paginationInfo.pages}}
-
-            {{filter}}
         </div>
 
         <div class="alert alert-warning">
